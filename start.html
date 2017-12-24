@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.starts{
+			height:30px;
+			width: 30px;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		highlightStar(4)
+		function highlightStar(num){ 
+ 		if(num>0&&num<=0.5){
+ 			$('#start1').attr("src","images/half.png");
+ 		}
+ 		if(num>0.5&&num<=1){
+ 			$('#start1').attr("src","images/selected.png");
+ 		}
+ 		if(num>1&&num<=1.5){
+ 			$('#start1').attr("src","images/selected.png");
+ 			$('#start2').attr("src","images/half.png");
+ 		}
+ 		if(num>1.5&&num<=2){
+ 			$('#start1').attr("src","images/selected.png");
+ 			$('#start2').attr("src","images/selected.png");
+ 		}
+ 		if(num>2&&num<=2.5){
+ 			$('#start1').attr("src","images/selected.png");
+ 			$('#start2').attr("src","images/selected.png");
+ 			$('#start3').attr("src","images/half.png");
+ 		}
+ 		if(num>2.5&&num<=3){
+ 			$('#start1').attr("src","images/selected.png");
+ 			$('#start2').attr("src","images/selected.png");
+ 			$('#start3').attr("src","images/selected.png");
+ 		}
+ 		if(num>3&&num<=3.5){
+ 			$('#start1').attr("src","images/selected.png");
+ 			$('#start2').attr("src","images/selected.png");
+ 			$('#start3').attr("src","images/selected.png");
+ 			$('#start4').attr("src","images/half.png");
+ 		}
+ 		if(num>3.5&&num<=4){
+ 			$('#start1').attr("src","images/selected.png");
+ 			$('#start2').attr("src","images/selected.png");
+ 			$('#start3').attr("src","images/selected.png");
+ 			$('#start4').attr("src","images/selected.png");
+ 		}
+ 		if(num>4&&num<=4.5){
+ 			$('#start1').attr("src","images/selected.png");
+ 			$('#start2').attr("src","images/selected.png");
+ 			$('#start3').attr("src","images/selected.png");
+ 			$('#start4').attr("src","images/selected.png");
+ 			$('#start5').attr("src","images/half.png");
+ 		}
+ 		if(num>4.5&&num<=5){
+ 			$('#start1').attr("src","images/selected.png");
+ 			$('#start2').attr("src","images/selected.png");
+ 			$('#start3').attr("src","images/selected.png");
+ 			$('#start4').attr("src","images/selected.png");
+ 			$('#start5').attr("src","images/selected.png");
+ 		}
+ 	} 
+});
+	</script>
+
+</head>
+<body>
+	<div >
+    <img src="images/normal.png" id='start1' class="starts">
+    <img src="images/normal.png" id='start2' class="starts">
+    <img src="images/normal.png" id='start3' class="starts">
+    <img src="images/normal.png" id='start4' class="starts">
+    <img src="images/normal.png" id='start5' class="starts">
+    </div>
+</body>
+</html>
